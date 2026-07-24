@@ -34,7 +34,7 @@ function App() {
 
   const getData = async () => {
     try {
-      const res = await fetch("http://convitechakenny.runasp.net/Convite/GetConfirmados");
+      const res = await fetch("https://convitechakenny.runasp.net/Convite/GetConfirmados");
       const json = await res.json();
 
       setSucess(false);
@@ -48,7 +48,7 @@ function App() {
 
   const postName = async (nome) => {
     try {
-      const res = await fetch("http://convitechakenny.runasp.net/Convite/PostConvidado", {
+      const res = await fetch("https://convitechakenny.runasp.net/Convite/PostConvidado", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
