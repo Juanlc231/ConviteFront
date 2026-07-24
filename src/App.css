@@ -1,7 +1,7 @@
 .container {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   justify-content: end;
   flex-direction: column;
   background-image: url("./img/ConviteImg.png");
@@ -198,4 +198,10 @@ li {
 .itens span {
   font-size: 15px;
 }
+}
+
+@media(min-width:1920px) and (min-height:910px){
+ .itens {
+    margin-bottom: 4rem;
+  }
 }
